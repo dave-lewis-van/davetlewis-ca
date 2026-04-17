@@ -6,12 +6,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <div class="max-w-3xl mx-auto px-6">
 
     <!-- Header -->
-    <section class="py-16 sm:py-20 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6">
+    <section class="py-24 sm:py-32 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6">
       <div>
         <p class="text-sm font-medium tracking-widest uppercase text-blue-700 dark:text-blue-400 mb-3">
           Résumé
         </p>
-        <h1 class="text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
+        <h1 class="text-5xl sm:text-6xl font-bold tracking-tight text-slate-900 dark:text-white">
           Dave Lewis
         </h1>
         <p class="mt-2 text-lg text-slate-600 dark:text-slate-400">
@@ -39,9 +39,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </h2>
       <p class="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
         Technical writer with experience producing clear, accurate documentation for software products.
-        Specialises in API references, developer guides, and user-facing content that reduces support
-        load and accelerates onboarding. Comfortable working in docs-as-code environments alongside
-        engineering teams.
+        Applies a technical aptitude to grasp new concepts and acquire new skills quickly. 
+        Proven track record in implementing and maintaining documentation single-sourcing systems that are reliable, flexible, and cost-effective.
       </p>
     </section>
 
@@ -57,13 +56,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <h3 class="text-base font-semibold text-slate-900 dark:text-white">
               Senior Technical Writer
             </h3>
-            <span class="text-sm text-slate-500 dark:text-slate-500 shrink-0">2022 – Present</span>
+            <span class="text-sm text-slate-500 dark:text-slate-500 shrink-0">Jun 2024 – Apr 2026</span>
           </div>
-          <p class="text-sm font-medium text-slate-600 dark:text-slate-400 mb-2">Placeholder Company · Remote</p>
+          <p class="text-sm font-medium text-slate-600 dark:text-slate-400 mb-2">Alida · Vancouver, BC · Hybrid</p>
           <ul class="space-y-1 text-sm text-slate-600 dark:text-slate-400 list-disc list-inside">
-            <li>Placeholder responsibility one — quantified outcome.</li>
-            <li>Placeholder responsibility two — tools or methods used.</li>
-            <li>Placeholder responsibility three — collaboration or scale.</li>
+            <li>Documented the company's first generative AI assistant and a new suite of modern reporting features, including weighting, significance testing, sentiment analysis, and choice-based conjoint analysis.</li>
+            <li>Led the migration of all company documentation from standalone product-specific help sites to a unified set of articles in Zendesk Knowledge.</li>
+            <li>Converted tools and processes from XMetaL Author to Oxygen XML Author for direct publishing to Zendesk.</li>
+            <li>Built GitHub Actions–based workflows to stage documentation for review outside of Zendesk, to validate all DITA content using Schematron, and to manage Zendesk article redirects.</li>
           </ul>
         </div>
 
@@ -72,12 +72,43 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <h3 class="text-base font-semibold text-slate-900 dark:text-white">
               Technical Writer
             </h3>
-            <span class="text-sm text-slate-500 dark:text-slate-500 shrink-0">2019 – 2022</span>
+            <span class="text-sm text-slate-500 dark:text-slate-500 shrink-0">Feb 2024 – Jun 2024</span>
           </div>
-          <p class="text-sm font-medium text-slate-600 dark:text-slate-400 mb-2">Placeholder Company · City, Province</p>
+          <p class="text-sm font-medium text-slate-600 dark:text-slate-400 mb-2">DTL Communications (Client: Telus International) · Vancouver, BC · Remote</p>
           <ul class="space-y-1 text-sm text-slate-600 dark:text-slate-400 list-disc list-inside">
-            <li>Placeholder responsibility one — quantified outcome.</li>
-            <li>Placeholder responsibility two — tools or methods used.</li>
+            <li>Researched and wrote technical evaluation and implementation documentation for Telus SmartHome+, targeting technical staff at prospective customer service providers.</li>
+            <li>Documented the SmartHome+ architecture, which integrates smart home devices — including lights, voice assistants, cameras, and safety sensors — with Amazon Web Services (AWS) for authentication, device connectivity and controls, and AI-powered video processing.</li>
+            <li>Reviewed, edited, and wrote developer documentation in the OpenAPI specification for the SmartHome+ API.</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
+            <h3 class="text-base font-semibold text-slate-900 dark:text-white">
+              Senior Technical Writer
+            </h3>
+            <span class="text-sm text-slate-500 dark:text-slate-500 shrink-0">Nov 2020 – Oct 2023</span>
+          </div>
+          <p class="text-sm font-medium text-slate-600 dark:text-slate-400 mb-2">Alida · Hybrid</p>
+          <ul class="space-y-1 text-sm text-slate-600 dark:text-slate-400 list-disc list-inside">
+            <li>Wrote documentation for administrators and research analysts across a full-featured analytics platform, enterprise administration features, and customer community engagement tools.</li>
+            <li>Partnered with Product Management, Engineering, QA, and UX in an agile environment to ship documentation alongside feature releases for a globally distributed product team.</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
+            <h3 class="text-base font-semibold text-slate-900 dark:text-white">
+              Senior Technical Writer
+            </h3>
+            <span class="text-sm text-slate-500 dark:text-slate-500 shrink-0">2017 – Nov 2020</span>
+          </div>
+          <p class="text-sm font-medium text-slate-600 dark:text-slate-400 mb-2">ActiveState · Vancouver, BC</p>
+          <ul class="space-y-1 text-sm text-slate-600 dark:text-slate-400 list-disc list-inside">
+            <li>Wrote end-user documentation for the ActiveState Platform and Komodo IDE. Generated and maintained documentation for ActiveState's open-source distributions of the Python, Perl, Tcl, Ruby, and Go programming languages.</li>
+            <li>Overhauled existing documentation tools and processes. Replaced a homegrown system of custom scripts for each supported programming language with a standard approach for all ActiveState documentation. Implemented a new workflow with Markdown for content, the Hugo static site generator for templating and processing, and GitHub and AWS Amplify for continuous deployment and hosting.</li>
+            <li>Supported Product Management, Customer Success, and other teams with data analytics to measure product usage. Also, maintained a visual dashboard with key company metrics.</li>
+            <li>Served in a Product Management role on a project to migrate existing customers to the new ActiveState Platform.</li>
           </ul>
         </div>
 
@@ -111,11 +142,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <div>
         <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-1">
           <h3 class="text-base font-semibold text-slate-900 dark:text-white">
-            Bachelor of Arts — Placeholder Programme
+            Bachelor of Arts (B.A.), English
           </h3>
-          <span class="text-sm text-slate-500 dark:text-slate-500 shrink-0">20XX</span>
+          <span class="text-sm text-slate-500 dark:text-slate-500 shrink-0">1997–2000</span>
         </div>
-        <p class="text-sm text-slate-600 dark:text-slate-400">Placeholder University · City, Province</p>
+        <p class="text-sm text-slate-600 dark:text-slate-400">Simon Fraser University · Burnaby, British Columbia</p>
       </div>
     </section>
 
