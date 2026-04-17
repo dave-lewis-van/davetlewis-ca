@@ -1,0 +1,11 @@
+---
+interface Props {
+  class?: string;
+}
+const { class: className } = Astro.props;
+---
+
+<a href="/" class:list={["inline-flex flex-col leading-none", className]}>
+  <span class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">DTL</span>
+  <span class="text-[0.6rem] font-medium tracking-widest uppercase text-slate-500 dark:text-slate-400">Communications</span>
+</a>

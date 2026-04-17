@@ -1,18 +1,10 @@
 ---
-import '../styles/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>DTL Communications</title>
-  </head>
-  <body class="bg-white font-sans text-slate-900">
-    <h1 class="text-4xl font-bold p-8">DTL Communications</h1>
-    <p class="px-8 text-slate-600">Tailwind v4 + Astro — setup check.</p>
-  </body>
-</html>
+<BaseLayout title="Home">
+  <div class="max-w-5xl mx-auto px-6 py-24">
+    <h1 class="text-4xl font-bold tracking-tight">DTL Communications</h1>
+    <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">Placeholder — hero content coming in issue #5.</p>
+  </div>
+</BaseLayout>
