@@ -10,7 +10,7 @@ export async function getStaticPaths() {
 const { item } = Astro.props;
 const { Content } = await render(item);
 
-const { title, summary, tags, date, client, link } = item.data;
+const { title, summary, tags, date, organization, link } = item.data;
 const formattedDate = date.toLocaleDateString('en-CA', { year: 'numeric', month: 'long' });
 ---
 
@@ -36,10 +36,10 @@ const formattedDate = date.toLocaleDateString('en-CA', { year: 'numeric', month:
       <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">{summary}</p>
 
       <dl class="mt-6 flex flex-wrap gap-x-8 gap-y-3 text-sm">
-        {client && (
+        {organization && (
           <div>
-            <dt class="text-xs font-medium tracking-widest uppercase text-slate-400 dark:text-slate-500">Client</dt>
-            <dd class="mt-0.5 text-slate-700 dark:text-slate-300">{client}</dd>
+            <dt class="text-xs font-medium tracking-widest uppercase text-slate-400 dark:text-slate-500">Organization</dt>
+            <dd class="mt-0.5 text-slate-700 dark:text-slate-300">{organization}</dd>
           </div>
         )}
         <div>

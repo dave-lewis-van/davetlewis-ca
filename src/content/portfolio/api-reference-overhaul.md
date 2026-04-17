@@ -3,7 +3,7 @@ title: API Reference Overhaul
 summary: Rewrote a legacy REST API reference for a payments platform, reducing average time-to-first-call for new integrators from 4 hours to under 45 minutes.
 tags: [API docs, OpenAPI, Developer experience]
 date: 2024-09-01
-client: Placeholder Client A
+organization: Placeholder Client A
 featured: true
 ---
 

@@ -3,7 +3,7 @@ title: User Manual Redesign
 summary: Restructured a 200-page user manual for an enterprise IoT platform using DITA, enabling single-source publishing across web, PDF, and in-app help.
 tags: [DITA, User manuals, Single-sourcing]
 date: 2023-11-01
-client: Placeholder Client C
+organization: Placeholder Client C
 ---
 
 ## Context
