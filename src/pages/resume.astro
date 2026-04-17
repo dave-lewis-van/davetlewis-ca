@@ -1,0 +1,130 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Resume" description="Dave Lewis — Technical writer résumé with experience, skills, and education.">
+  <div class="max-w-3xl mx-auto px-6">
+
+    <!-- Header -->
+    <section class="py-16 sm:py-20 flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6">
+      <div>
+        <p class="text-sm font-medium tracking-widest uppercase text-blue-700 dark:text-blue-400 mb-3">
+          Résumé
+        </p>
+        <h1 class="text-4xl font-bold tracking-tight text-slate-900 dark:text-white">
+          Dave Lewis
+        </h1>
+        <p class="mt-2 text-lg text-slate-600 dark:text-slate-400">
+          Technical Writer
+        </p>
+      </div>
+      <a
+        href="/resume.pdf"
+        download
+        class="self-start inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-blue-700 text-white font-medium text-sm hover:bg-blue-800 transition-colors print:hidden"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Download PDF
+      </a>
+    </section>
+
+    <!-- Summary -->
+    <section class="py-10 border-t border-slate-200 dark:border-slate-800">
+      <h2 class="text-xs font-medium tracking-widest uppercase text-slate-400 dark:text-slate-500 mb-4">
+        Summary
+      </h2>
+      <p class="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+        Technical writer with experience producing clear, accurate documentation for software products.
+        Specialises in API references, developer guides, and user-facing content that reduces support
+        load and accelerates onboarding. Comfortable working in docs-as-code environments alongside
+        engineering teams.
+      </p>
+    </section>
+
+    <!-- Experience -->
+    <section class="py-10 border-t border-slate-200 dark:border-slate-800">
+      <h2 class="text-xs font-medium tracking-widest uppercase text-slate-400 dark:text-slate-500 mb-6">
+        Experience
+      </h2>
+      <div class="space-y-8">
+
+        <div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
+            <h3 class="text-base font-semibold text-slate-900 dark:text-white">
+              Senior Technical Writer
+            </h3>
+            <span class="text-sm text-slate-500 dark:text-slate-500 shrink-0">2022 – Present</span>
+          </div>
+          <p class="text-sm font-medium text-slate-600 dark:text-slate-400 mb-2">Placeholder Company · Remote</p>
+          <ul class="space-y-1 text-sm text-slate-600 dark:text-slate-400 list-disc list-inside">
+            <li>Placeholder responsibility one — quantified outcome.</li>
+            <li>Placeholder responsibility two — tools or methods used.</li>
+            <li>Placeholder responsibility three — collaboration or scale.</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
+            <h3 class="text-base font-semibold text-slate-900 dark:text-white">
+              Technical Writer
+            </h3>
+            <span class="text-sm text-slate-500 dark:text-slate-500 shrink-0">2019 – 2022</span>
+          </div>
+          <p class="text-sm font-medium text-slate-600 dark:text-slate-400 mb-2">Placeholder Company · City, Province</p>
+          <ul class="space-y-1 text-sm text-slate-600 dark:text-slate-400 list-disc list-inside">
+            <li>Placeholder responsibility one — quantified outcome.</li>
+            <li>Placeholder responsibility two — tools or methods used.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="py-10 border-t border-slate-200 dark:border-slate-800">
+      <h2 class="text-xs font-medium tracking-widest uppercase text-slate-400 dark:text-slate-500 mb-4">
+        Skills
+      </h2>
+      <ul class="flex flex-wrap gap-2">
+        {[
+          'API documentation', 'Developer guides', 'User manuals',
+          'OpenAPI / Swagger', 'DITA', 'Markdown / MDX',
+          'Docs-as-code', 'Git', 'Content strategy',
+          'Structured authoring', 'HTML / CSS',
+        ].map((skill) => (
+          <li class="px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-400">
+            {skill}
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section class="py-10 border-t border-slate-200 dark:border-slate-800 mb-8">
+      <h2 class="text-xs font-medium tracking-widest uppercase text-slate-400 dark:text-slate-500 mb-6">
+        Education
+      </h2>
+      <div>
+        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-1">
+          <h3 class="text-base font-semibold text-slate-900 dark:text-white">
+            Bachelor of Arts — Placeholder Programme
+          </h3>
+          <span class="text-sm text-slate-500 dark:text-slate-500 shrink-0">20XX</span>
+        </div>
+        <p class="text-sm text-slate-600 dark:text-slate-400">Placeholder University · City, Province</p>
+      </div>
+    </section>
+
+  </div>
+</BaseLayout>
+
+<style>
+  @media print {
+    nav, footer { display: none; }
+    section { page-break-inside: avoid; }
+  }
+</style>
