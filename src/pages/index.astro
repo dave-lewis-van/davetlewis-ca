@@ -2,9 +2,55 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Home">
-  <div class="max-w-5xl mx-auto px-6 py-24">
-    <h1 class="text-4xl font-bold tracking-tight">DTL Communications</h1>
-    <p class="mt-4 text-lg text-slate-600 dark:text-slate-400">Placeholder — hero content coming in issue #5.</p>
+<BaseLayout title="Home" description="Dave Lewis — Technical writer specialising in clear documentation for complex products.">
+  <div class="max-w-5xl mx-auto px-6">
+
+    <!-- Hero -->
+    <section class="py-24 sm:py-32">
+      <p class="text-sm font-medium tracking-widest uppercase text-blue-700 dark:text-blue-400 mb-4">
+        Technical Writer
+      </p>
+      <h1 class="text-5xl sm:text-6xl font-bold tracking-tight text-slate-900 dark:text-white leading-tight">
+        Clear docs for<br />complex products.
+      </h1>
+      <p class="mt-6 text-xl text-slate-600 dark:text-slate-400 max-w-2xl">
+        I help software teams ship documentation that developers actually read —
+        API references, user guides, and technical content that reduces support load
+        and accelerates onboarding.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a
+          href="/portfolio"
+          class="inline-flex items-center px-6 py-3 rounded-md bg-blue-700 text-white font-medium text-sm hover:bg-blue-800 transition-colors"
+        >
+          View my work
+        </a>
+        <a
+          href="/contact"
+          class="inline-flex items-center px-6 py-3 rounded-md border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 font-medium text-sm hover:border-slate-400 dark:hover:border-slate-500 transition-colors"
+        >
+          Get in touch
+        </a>
+      </div>
+    </section>
+
+    <!-- Skills strip -->
+    <section class="py-12 border-t border-slate-200 dark:border-slate-800">
+      <p class="text-xs font-medium tracking-widest uppercase text-slate-400 dark:text-slate-500 mb-6">
+        What I work with
+      </p>
+      <ul class="flex flex-wrap gap-3">
+        {[
+          'API documentation', 'Developer guides', 'User manuals',
+          'Content strategy', 'Docs-as-code', 'Markdown / MDX',
+          'OpenAPI / Swagger', 'DITA', 'Git',
+        ].map((skill) => (
+          <li class="px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-400">
+            {skill}
+          </li>
+        ))}
+      </ul>
+    </section>
+
   </div>
 </BaseLayout>
