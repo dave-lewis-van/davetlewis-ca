@@ -3,7 +3,7 @@ title: Developer Onboarding Guide
 summary: Created an end-to-end onboarding guide for a SaaS developer platform, consolidating scattered README files and wiki pages into a single structured experience.
 tags: [Developer guides, Docs-as-code, Content strategy]
 date: 2024-03-15
-client: Placeholder Client B
+organization: Placeholder Client B
 ---
 
 ## Context
