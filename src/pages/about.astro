@@ -1,0 +1,145 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="About"
+  description="Background and experience of Dave Lewis, technical writer and content strategist."
+>
+  <div class="max-w-5xl mx-auto px-6">
+
+    <!-- Intro -->
+    <section class="py-24 sm:py-32">
+      <p class="text-sm font-medium tracking-widest uppercase text-blue-700 dark:text-blue-400 mb-4">
+        About
+      </p>
+      <h1 class="text-5xl sm:text-6xl font-bold tracking-tight text-slate-900 dark:text-white leading-tight">
+        Dave Lewis
+      </h1>
+      <p class="mt-6 text-xl text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
+        Technical writer and content strategist with a focus on developer documentation,
+        product content, and information architecture. I help teams make complex things clear.
+      </p>
+    </section>
+
+    <!-- Background -->
+    <section class="py-12 border-t border-slate-200 dark:border-slate-800">
+      <p class="text-xs font-medium tracking-widest uppercase text-slate-400 dark:text-slate-500 mb-6">
+        Background
+      </p>
+      <div class="grid sm:grid-cols-2 gap-8">
+        <div>
+          <h2 class="text-xl font-semibold text-slate-900 dark:text-white mb-3">Experience</h2>
+          <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+            Over a decade working in technical communication across software, SaaS, and developer
+            tooling. I've embedded with engineering teams, led documentation initiatives from scratch,
+            and built content systems that scale.
+          </p>
+        </div>
+        <div>
+          <h2 class="text-xl font-semibold text-slate-900 dark:text-white mb-3">Education</h2>
+          <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+            Placeholder — degree, institution, year. Relevant certifications or continuing education
+            can also live here.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="py-12 border-t border-slate-200 dark:border-slate-800">
+      <p class="text-xs font-medium tracking-widest uppercase text-slate-400 dark:text-slate-500 mb-6">
+        Skills
+      </p>
+      <div class="grid sm:grid-cols-3 gap-8">
+        <div>
+          <h2 class="text-sm font-semibold text-slate-900 dark:text-white mb-3 uppercase tracking-wide">
+            Writing & Content
+          </h2>
+          <ul class="space-y-2 text-slate-600 dark:text-slate-400 text-sm">
+            <li>API & developer documentation</li>
+            <li>User guides & onboarding content</li>
+            <li>Conceptual & reference docs</li>
+            <li>Release notes & changelogs</li>
+            <li>Content strategy & planning</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-sm font-semibold text-slate-900 dark:text-white mb-3 uppercase tracking-wide">
+            Tools & Platforms
+          </h2>
+          <ul class="space-y-2 text-slate-600 dark:text-slate-400 text-sm">
+            <li>Docs-as-code (Git, Markdown)</li>
+            <li>DITA / XML authoring</li>
+            <li>Static site generators</li>
+            <li>Figma & design collaboration</li>
+            <li>Jira, Confluence, Notion</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="text-sm font-semibold text-slate-900 dark:text-white mb-3 uppercase tracking-wide">
+            Practices
+          </h2>
+          <ul class="space-y-2 text-slate-600 dark:text-slate-400 text-sm">
+            <li>Information architecture</li>
+            <li>Agile & scrum workflows</li>
+            <li>Docs site audits & migration</li>
+            <li>Style guide development</li>
+            <li>Stakeholder interviews</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- What I do -->
+    <section class="py-12 border-t border-slate-200 dark:border-slate-800">
+      <p class="text-xs font-medium tracking-widest uppercase text-slate-400 dark:text-slate-500 mb-6">
+        What I do
+      </p>
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div class="rounded-lg border border-slate-200 dark:border-slate-800 p-6">
+          <h3 class="font-semibold text-slate-900 dark:text-white mb-2">Developer Documentation</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            API references, SDKs, quickstarts, and integration guides — written for developers,
+            shaped around real workflows.
+          </p>
+        </div>
+        <div class="rounded-lg border border-slate-200 dark:border-slate-800 p-6">
+          <h3 class="font-semibold text-slate-900 dark:text-white mb-2">User & Product Docs</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            End-user guides, onboarding flows, and in-app help content that reduce support load
+            and improve product adoption.
+          </p>
+        </div>
+        <div class="rounded-lg border border-slate-200 dark:border-slate-800 p-6">
+          <h3 class="font-semibold text-slate-900 dark:text-white mb-2">Docs Systems & Strategy</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Audits, migrations, toolchain selection, and information architecture — building
+            documentation systems that teams can actually maintain.
+          </p>
+        </div>
+        <div class="rounded-lg border border-slate-200 dark:border-slate-800 p-6">
+          <h3 class="font-semibold text-slate-900 dark:text-white mb-2">Embedded Writing Support</h3>
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Short-term or ongoing engagement as an embedded writer on product or engineering teams,
+            fitting into existing workflows.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 border-t border-slate-200 dark:border-slate-800">
+      <p class="text-slate-600 dark:text-slate-400 mb-6">
+        Interested in working together?
+      </p>
+      <a
+        href="/contact"
+        class="inline-flex items-center px-6 py-3 rounded-md bg-blue-700 text-white font-medium text-sm hover:bg-blue-800 transition-colors"
+      >
+        Get in touch
+      </a>
+    </section>
+
+  </div>
+</BaseLayout>
