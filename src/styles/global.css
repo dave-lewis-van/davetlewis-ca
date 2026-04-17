@@ -7,4 +7,22 @@
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /*
+   * THEME: Technical & Modern
+   * Monospace font applied to labels, tags, and metadata to signal
+   * familiarity with developer toolchains. Body copy stays in Inter.
+   *
+   * Accent:
+   *   Blue-700  Tailwind default #1d4ed8  — eyebrow, hover text (light)
+   *   Blue-400  Tailwind default #60a5fa  — eyebrow, hover text (dark)
+   *
+   * Monospace elements: skill pills, tag pills, section labels (CAPS),
+   *   metadata dt labels, portfolio card tags, logo subtitle.
+   *
+   * Neutrals: Tailwind slate (unchanged)
+   * Typography: Inter body + system monospace accents
+   * Dark mode: prefers-color-scheme (unchanged)
+   */
 }
