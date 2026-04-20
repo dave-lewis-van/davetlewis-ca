@@ -10,11 +10,11 @@ position: 2
 
 ## Context
 
-Alida's documentation had grown into a collection of five standalone, product-specific webhelp sites resulting in a fragmented user experience. Alida's support knowledge base was already stored in Zendesk Knowledge, so migrating the documenatation to Zendesk provided a unified location for all product support information, simplifying access for customers and the Alida support team.
+Alida's documentation had grown into a collection of five standalone, product-specific webhelp sites resulting in a fragmented user experience. Alida's support knowledge base was already stored in Zendesk Knowledge, so migrating the documentation to Zendesk provided a unified location for all product support information, simplifying access for customers and the Alida support team.
 
 ## Challenge
 
-The migration involved more than 1,500 DITA topics spread across product-specific user guides. These topics needed to be orgainzed as articles in categories and sections in Zendesk with each section in Zendesk mapping to a separate ditamap file. This content reorganzation required a significant investment of work upfront, but resulted in a much cleaner organization of the articles.
+The migration involved more than 1,500 DITA topics spread across product-specific user guides. These topics needed to be orgainzed as articles in categories and sections in Zendesk with each section in Zendesk mapping to a separate DITA map file. This content planning exercise and reorganization required a significant investment of work upfront, but resulted in a much cleaner organization of the articles in the knowledge base.
 
 Beyond the sheer volume, the project required a simultaneous toolchain transition. We moved from XMetaL Author to Oxygen XML Author, which supported publising DITA content directly to Zendesk. I established new workflows for validating DITA content before publication, posting review documentation to staging sites, and managing redirects for Zendesk articles.
 
