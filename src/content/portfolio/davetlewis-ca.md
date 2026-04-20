@@ -11,13 +11,13 @@ position: 3
 
 ## Context
 
-A technical writer's portfolio site should demonstrate the same principles as good documentation: clear structure, purposeful content, and a maintainable authoring workflow. Building the site myself, rather than using a hosted portfolio tool, was also an opportunity to put docs-as-code practices to work on a real project.
+A technical writer's portfolio site should demonstrate the same principles as good documentation: clear structure, purposeful content, and a maintainable authoring workflow. Building the site myself, rather than using a hosted portfolio tool, was also an opportunity to put docs-as-code practices to work.
 
 ## Approach
 
 Built with [Astro](https://astro.build), a static site generator well-suited to content-focused sites. Content is written in Markdown and managed as a content collection — the same pattern used in many modern documentation systems. The site is deployed to AWS S3 and served via CloudFront, with a CI/CD pipeline through GitHub Actions.
 
-The build also served as an experiment in AI-assisted development. Claude Code handled the majority of the front-end implementation — component structure, Tailwind CSS styling, and responsive layout — while I focused on content, architecture decisions, and design direction.
+The site is an experiment in AI-assisted development. Claude Code handled the majority of the front-end implementation — component structure, Tailwind CSS styling, and responsive layout — while I focused on content, architecture decisions, and design direction.
 
 ## Outcome
 
