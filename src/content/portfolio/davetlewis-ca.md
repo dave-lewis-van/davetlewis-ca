@@ -1,7 +1,7 @@
 ---
 title: davetlewis.ca
 summary: A personal portfolio site built with Astro and Markdown, exploring AI-assisted web development. Hosted on AWS S3 with CloudFront.
-tags: [Docs-as-code, Astro, AWS]
+tags: [Claude Code, Docs-as-code, Astro, AWS]
 date: 2026-04-17
 organization: DTL Communications
 link: https://davetlewis.ca
