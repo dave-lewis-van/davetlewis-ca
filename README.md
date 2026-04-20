@@ -1,43 +1,79 @@
-# Astro Starter Kit: Minimal
+# davetlewis.ca
+
+Personal portfolio site for Dave Lewis, Technical Writer. Built with Astro and Tailwind CSS, deployed to AWS S3 via CloudFront.
+
+Live at [davetlewis.ca](https://davetlewis.ca).
+
+## Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | [Astro](https://astro.build) v6 (static output) |
+| Styling | [Tailwind CSS](https://tailwindcss.com) v4 with `@tailwindcss/typography` |
+| Typography | [Inter](https://rsms.me/inter/) via `@fontsource/inter` |
+| Content | Astro Content Collections (Markdown) |
+| Hosting | AWS S3 + CloudFront |
+| CI/CD | GitHub Actions |
+
+## Project structure
+
+```
+src/
+├── components/       # Nav, Footer, Logo, PortfolioCard
+├── content/
+│   └── portfolio/    # Portfolio case studies (.md)
+├── content.config.ts # Content collection schema
+├── layouts/
+│   └── BaseLayout.astro
+├── pages/
+│   ├── index.astro
+│   ├── about.astro
+│   ├── resume.astro
+│   ├── contact.astro
+│   └── portfolio/
+│       ├── index.astro
+│       └── [id].astro
+└── styles/
+    └── global.css    # Tailwind theme overrides, font imports
+```
+
+## Local development
+
+Requires Node ≥ 22.12.0.
 
 ```sh
-npm create astro@latest -- --template minimal
+npm install
+npm run dev        # Dev server at http://localhost:4321
+npm run build      # Production build to dist/
+npm run preview    # Preview production build locally
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Adding a portfolio item
 
-## 🚀 Project Structure
+Create a new Markdown file in `src/content/portfolio/`. The filename becomes the URL slug (`/portfolio/<slug>`).
 
-Inside of your Astro project, you'll see the following folders and files:
+Required frontmatter fields:
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```yaml
+---
+title: Project Title
+summary: One or two sentence description shown on the portfolio index.
+tags: [Tag One, Tag Two]
+date: 2025-01-01
+position: 1          # Controls display order on the portfolio index
+---
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Optional fields: `organization`, `link` (must be a full URL), `featured` (boolean, defaults to false).
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Deployment
 
-Any static assets, like images, can be placed in the `public/` directory.
+Push to `main` triggers `.github/workflows/deploy.yml`, which:
 
-## 🧞 Commands
+1. Builds the site to `dist/`
+2. Syncs `dist/` to the S3 bucket (`aws s3 sync --delete`)
+3. Invalidates the CloudFront distribution
 
-All commands are run from the root of the project, from a terminal:
+Required GitHub secrets: `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION`, `S3_BUCKET`, `CLOUDFRONT_DISTRIBUTION_ID`.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+See [`.github/infrastructure.md`](.github/infrastructure.md) for AWS resource IDs.
