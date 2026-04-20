@@ -4,13 +4,14 @@ summary: Comprehensive documentation for the Alida Platform, covering genrative 
 tags: [Technical Writing, Documentation, DITA, Zendesk]
 date: 2023-10-01
 organization: Alida
+link: https://alidasupport.zendesk.com/hc/en-us)
 featured: true
 position: 1
 ---
 
 ## Context
 
-Alida is an enterprise customer experience platform used by research analysts and administrators. The [Alida Help Center](https://alidasupport.zendesk.com/hc/en-us) serves both audiences — analysts running surveys and interpreting results, and admins managing users, permissions, and platform configuration.
+Alida is an enterprise customer experience platform used by research analysts and administrators. The Alida Help Center serves both audiences — analysts running surveys and interpreting results, and admins managing users, permissions, and platform configuration.
 
 ## Challenge
 
