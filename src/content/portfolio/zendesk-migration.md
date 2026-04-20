@@ -10,7 +10,7 @@ position: 2
 
 ## Context
 
-Alida's documentation had grown into a collection of standalone, product-specific webhelp sites — one per product line. As the platform consolidated, the fragmented help experience became a liability: users had to know which site to visit, and content overlapped or drifted out of sync across properties.
+Alida's documentation had grown into a collection of five standalone, product-specific webhelp sites. As the platform consolidated, the fragmented help experience became a liability: users had to know which site to visit, and content overlapped or drifted out of sync across properties.
 
 ## Challenge
 
@@ -22,9 +22,9 @@ Led the migration project end to end. Converted the authoring environment from X
 
 Built a set of GitHub Actions–based workflows to support the new pipeline:
 
-- A **staging workflow** to publish documentation drafts outside of Zendesk for stakeholder review before going live
-- A **validation workflow** using Schematron rules to catch structural and content errors in DITA source before publishing
-- A **redirect workflow** to manage article URL changes during and after the migration, preventing broken links for existing users
+- A **staging workflow** to publish documentation drafts outside of Zendesk for stakeholder review before going live.
+- An optional **validation workflow** that could be run as a step in the **staging workflow** using Schematron rules to catch structural and content errors in DITA source before publishing.
+- A **redirect workflow** to manage article URL changes in Zendesk, preventing broken links for existing users.
 
 ## Outcome
 

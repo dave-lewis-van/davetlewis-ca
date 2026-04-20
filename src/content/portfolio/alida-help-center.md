@@ -1,7 +1,7 @@
 ---
 title: Alida Help Center
-summary: Comprehensive documentation for the Alida Platform, covering administration and the reporting and analytics features across a three-year engagement.
-tags: [User manuals, DITA, Zendesk]
+summary: Comprehensive documentation for the Alida Platform, covering genrative AI features, administration, and reporting and analytics.
+tags: [Technical Writing, Documentation, DITA, Zendesk]
 date: 2023-10-01
 organization: Alida
 featured: true
@@ -10,7 +10,7 @@ position: 1
 
 ## Context
 
-Alida is an enterprise customer experience platform used by research analysts and administrators at large organizations. The Help Center serves both audiences — analysts running surveys and interpreting results, and admins managing users, permissions, and platform configuration.
+Alida is an enterprise customer experience platform used by research analysts and administrators. The Help Center serves both audiences — analysts running surveys and interpreting results, and admins managing users, permissions, and platform configuration.
 
 ## Challenge
 
@@ -18,10 +18,10 @@ The platform was in active development, with features shipping in regular agile 
 
 ## Approach
 
-Embedded with the cross-functional product team — partnering with Product Management, Engineering, QA, and UX — to stay ahead of the release schedule. Built familiarity with the platform as a user before writing, then structured documentation around the workflows each audience actually performs rather than the feature hierarchy.
+As a member of the documentation team, I partnering with Product Management, Engineering, QA, and UX to stay ahead of the release schedule. I built up familiarity with the platform as a user before writing, then structured documentation around the workflows each audience actually performs rather than the feature hierarchy.
 
-Focused initially on administration and the reporting and analytics areas, which had the highest support contact rates. Later extended the work to include documentation for the platform's first generative AI assistant and a new suite of modern reporting features — weighting, significance testing, sentiment analysis, and choice-based conjoint analysis.
+I was focused, throughout my time at Alida, on the reporting and analytics areas of the platform, and on Adminsistator features such as [Single Sign-on (SSO)](https://alidasupport.zendesk.com/hc/en-us/articles/45348005094676). More recently, I focused on documentation for the platform's first generative AI feature, the [AI assistant for reporting](https://alidasupport.zendesk.com/hc/en-us/articles/46395262958100), and complex reporting features including [weighting](https://alidasupport.zendesk.com/hc/en-us/articles/45343934676884), [significance testing](https://alidasupport.zendesk.com/hc/en-us/articles/45343868627220), and AI-powered [sentiment analysis](https://alidasupport.zendesk.com/hc/en-us/articles/45343794894228).
 
 ## Outcome
 
-Maintained current, accurate Help Center coverage across the Alida Platform through the full three-year engagement, shipping documentation alongside every major release.
+Along with the other members of the documentation team, I maintained current and accurate documentation across the Alida Platform, shipping documentation alongside every major release.
