@@ -4,7 +4,7 @@ summary: Comprehensive documentation for the Alida Platform, covering generative
 tags: [Technical Writing, Documentation, DITA, Zendesk]
 date: 2023-10-01
 organization: Alida
-link: https://alidasupport.zendesk.com/hc/en-us)
+link: https://alidasupport.zendesk.com/hc/en-us
 featured: false
 position: 1
 ---
