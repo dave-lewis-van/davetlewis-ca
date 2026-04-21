@@ -1,5 +1,10 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const selectedWork = (await getCollection('portfolio'))
+  .sort((a, b) => (a.data.position ?? 99) - (b.data.position ?? 99))
+  .slice(0, 3);
 ---
 
 <BaseLayout title="Home" description="Dave Lewis — Technical writer specialising in clear documentation for complex products.">
@@ -7,35 +12,85 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
     <!-- Hero -->
     <section class="py-24 sm:py-28">
-      <p class="text-sm font-medium tracking-widest uppercase text-blue-700 dark:text-blue-400 mb-4">
-        Technical Writer
-      </p>
-      <h1 class="text-6xl sm:text-7xl font-serif font-normal tracking-[-0.025em] text-slate-900 dark:text-white leading-tight">
-        Clear docs for<br />complex products.
-      </h1>
-      <p class="mt-6 text-xl text-slate-600 dark:text-slate-400 max-w-2xl">
-        I help software teams ship high-quality documentation on time —
-        user guides, API references, and administrator content 
-        that reduces support load and accelerates customer onboarding.
-      </p>
-      <div class="mt-10 flex flex-wrap gap-4">
-        <a
-          href="/portfolio"
-          class="inline-flex items-center px-6 py-3 rounded-md bg-blue-700 text-white font-medium text-sm hover:bg-blue-800 transition-colors"
-        >
-          View my work
-        </a>
-        <a
-          href="/contact"
-          class="inline-flex items-center px-6 py-3 rounded-md border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 font-medium text-sm hover:border-slate-400 dark:hover:border-slate-500 transition-colors"
-        >
-          Get in touch
-        </a>
+      <div class="grid grid-cols-1 lg:grid-cols-[1.6fr_1fr] gap-14 items-start">
+
+        <!-- Left: copy + CTAs -->
+        <div>
+          <p class="text-sm font-medium tracking-widest uppercase text-blue-700 dark:text-blue-400 mb-4">
+            Technical Writer
+          </p>
+          <h1 class="text-6xl sm:text-7xl font-serif font-normal tracking-[-0.025em] text-slate-900 dark:text-white leading-tight">
+            Clear docs for<br />complex products.
+          </h1>
+          <p class="mt-6 text-xl text-slate-600 dark:text-slate-400 max-w-2xl">
+            I help software teams ship high-quality documentation on time —
+            user guides, API references, and administrator content
+            that reduces support load and accelerates customer onboarding.
+          </p>
+          <div class="mt-10 flex flex-wrap gap-4">
+            <a
+              href="/portfolio"
+              class="inline-flex items-center px-6 py-3 rounded-md bg-blue-700 text-white font-medium text-sm hover:bg-blue-800 transition-colors"
+            >
+              See selected work →
+            </a>
+            <a
+              href="/resume"
+              class="inline-flex items-center px-6 py-3 rounded-md border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 font-medium text-sm hover:border-slate-400 dark:hover:border-slate-500 transition-colors"
+            >
+              Read résumé
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Now panel -->
+        <div class="border-l border-slate-200 dark:border-slate-800 pl-8 hidden lg:block">
+          <p class="font-mono text-[11px] tracking-widest uppercase text-slate-400 dark:text-slate-500 mb-4">Now</p>
+          {[
+            { label: 'Currently', value: 'Open to full-time and contract roles' },
+            { label: 'Focus', value: 'Developer docs, DITA → Zendesk migrations' },
+            { label: 'Based in', value: 'Vancouver, BC · Pacific time' },
+            { label: 'Latest', value: 'Shipped Alida\'s first GenAI assistant docs' },
+          ].map(({ label, value }, i, arr) => (
+            <div class:list={["py-3.5", i < arr.length - 1 && "border-b border-slate-100 dark:border-slate-800"]}>
+              <p class="text-[11px] text-slate-400 dark:text-slate-500 mb-1">{label}</p>
+              <p class="text-sm text-slate-900 dark:text-white leading-snug">{value}</p>
+            </div>
+          ))}
+        </div>
+
       </div>
     </section>
 
+    <!-- Selected work table -->
+    <section class="py-12 border-t border-slate-200 dark:border-slate-800">
+      <div class="flex items-baseline justify-between mb-6">
+        <p class="font-mono text-[11px] tracking-widest uppercase text-slate-400 dark:text-slate-500">Selected work</p>
+        <a href="/portfolio" class="text-sm text-blue-700 dark:text-blue-400 hover:underline">All projects →</a>
+      </div>
+      {selectedWork.map((item, i) => (
+        <a
+          href={`/portfolio/${item.id}`}
+          class="group grid grid-cols-[40px_1fr_auto] gap-6 items-center py-5 border-t border-slate-100 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-900/40 transition-colors -mx-3 px-3 rounded"
+        >
+          <span class="font-mono text-xs text-slate-400 dark:text-slate-500">
+            {String(i + 1).padStart(2, '0')}
+          </span>
+          <div>
+            <p class="text-base font-semibold text-slate-900 dark:text-white group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors leading-snug">
+              {item.data.title}
+            </p>
+            <p class="text-xs text-slate-400 dark:text-slate-500 mt-0.5">
+              {item.data.organization ?? ''}{item.data.organization ? ' · ' : ''}{item.data.date.getFullYear()}
+            </p>
+          </div>
+          <span class="text-sm text-blue-700 dark:text-blue-400">→</span>
+        </a>
+      ))}
+    </section>
+
     <!-- Skills strip -->
-    <section class="py-24 border-t border-slate-200 dark:border-slate-800">
+    <!-- <section class="py-24 border-t border-slate-200 dark:border-slate-800">
       <p class="text-xs font-medium tracking-widest uppercase text-slate-400 dark:text-slate-500 mb-6">
         What I work with
       </p>
@@ -43,14 +98,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         {[
           'User guides', 'Administrator guides', 'API documentation',
           'Content strategy', 'Docs-as-code', 'Markdown',
-          'Structured authoring', 'DITA', 'GitHub','OpenAPI specs', 
+          'Structured authoring', 'DITA', 'GitHub', 'OpenAPI specs',
         ].map((skill) => (
           <li class="px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-400">
             {skill}
           </li>
         ))}
       </ul>
-    </section>
+    </section> -->
 
   </div>
 </BaseLayout>

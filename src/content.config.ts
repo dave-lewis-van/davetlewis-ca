@@ -12,6 +12,7 @@ const portfolio = defineCollection({
     link: z.string().url().optional(),
     featured: z.boolean().default(false),
     position: z.number().optional(),
+    thumbnail: z.string().optional(),
   }),
 });
 
