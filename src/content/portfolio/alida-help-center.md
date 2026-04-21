@@ -1,6 +1,6 @@
 ---
 title: Alida Help Center
-summary: Comprehensive documentation for the Alida Platform, covering genrative AI features, administration, and reporting and analytics.
+summary: Comprehensive documentation for the Alida Platform, covering generative AI features, administration, and reporting and analytics.
 tags: [Technical Writing, Documentation, DITA, Zendesk]
 date: 2023-10-01
 organization: Alida

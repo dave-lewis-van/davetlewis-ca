@@ -1,6 +1,6 @@
 ---
 title: Zendesk Knowledge Migration
-summary: Led the migration of more than 1,500 DITA topics from product-focused webhelp sites to a unified Zendesk Knowledge Base, including a full toolchain transition and custom publishing automation.
+summary: Led the migration of more than 1,500 DITA topics from product-focused help sites to a unified Zendesk Knowledge Base, including a full toolchain transition and custom publishing automation.
 tags: [DITA, Content strategy, Zendesk]
 date: 2025-01-01
 organization: Alida
@@ -10,7 +10,7 @@ position: 2
 
 ## Context
 
-Alida's documentation had grown into a collection of five standalone, product-specific webhelp sites resulting in a fragmented user experience. Alida's support knowledge base was already stored in Zendesk, so migrating the documentation to Zendesk provided a unified location for all product support information, simplifying access for customers and the Alida support team.
+Alida's documentation had grown into a collection of five standalone, product-specific help sites resulting in a fragmented user experience. Alida's support knowledge base was already stored in Zendesk, so migrating the documentation to Zendesk provided a unified location for all product support information, simplifying access for customers and the Alida support team.
 
 ## Challenge
 
