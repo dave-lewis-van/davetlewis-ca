@@ -8,6 +8,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "build:pdf": "node scripts/generate-pdf.js",
+    "build:all": "astro build && node scripts/generate-pdf.js",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -17,5 +19,8 @@
     "@tailwindcss/vite": "^4.2.2",
     "astro": "^6.1.7",
     "tailwindcss": "^4.2.2"
+  },
+  "devDependencies": {
+    "playwright": "^1.59.1"
   }
 }

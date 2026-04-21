@@ -112,26 +112,53 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </ul>
         </div>
 
-      </div>
-    </section>
+        <div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
+            <h3 class="text-base font-semibold text-slate-900 dark:text-white">
+              Senior Technical Writer
+            </h3>
+            <span class="text-sm text-slate-500 dark:text-slate-500 shrink-0">2014 – 2016</span>
+          </div>
+          <p class="text-sm font-medium text-slate-600 dark:text-slate-400 mb-2">NetApp · Greater Vancouver Area</p>
+          <ul class="space-y-1 text-sm text-slate-600 dark:text-slate-400 list-disc list-inside">
+            <li>Wrote installation, administration, and API documentation for StorageGRID Webscale, a distributed, Linux-based, enterprise object storage application.</li>
+            <li>Worked with a globally distributed team in an agile development environment to deliver comprehensive and accurate documentation to support semi-annual releases.</li>
+            <li>Led the conversion of StorageGRID Webscale documentation set from unstructured FrameMaker to DITA to enable delivery to customers in multiple formats, and to conform to corporate documentation guidelines.</li>
+          </ul>
+        </div>
 
-    <!-- Skills -->
-    <section class="py-12 border-t border-slate-200 dark:border-slate-800">
-      <h2 class="text-xs font-medium tracking-widest uppercase text-slate-400 dark:text-slate-500 mb-4">
-        Skills
-      </h2>
-      <ul class="flex flex-wrap gap-2">
-        {[
-          'API documentation', 'Developer guides', 'User manuals',
-          'OpenAPI / Swagger', 'DITA', 'Markdown / MDX',
-          'Docs-as-code', 'Git', 'Content strategy',
-          'Structured authoring', 'HTML / CSS',
-        ].map((skill) => (
-          <li class="px-3 py-1.5 rounded-full border border-slate-200 dark:border-slate-700 text-sm text-slate-600 dark:text-slate-400">
-            {skill}
-          </li>
-        ))}
-      </ul>
+        <div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
+            <h3 class="text-base font-semibold text-slate-900 dark:text-white">
+              Senior Technical Writer
+            </h3>
+            <span class="text-sm text-slate-500 dark:text-slate-500 shrink-0">May 2007 – Apr 2014</span>
+          </div>
+          <p class="text-sm font-medium text-slate-600 dark:text-slate-400 mb-2">ACL · Greater Vancouver Area</p>
+          <ul class="space-y-1 text-sm text-slate-600 dark:text-slate-400 list-disc list-inside">
+            <li>Worked closely with developers, QA, UX designers, and product managers to produce accurate and usable end-user, administrator, installation, and API documentation.</li>
+            <li>Planned and authored documentation for the initial release of the ACL GRC cloud application. Provided ongoing documentation updates to support the continuous deployment development process.</li>
+            <li>Gained extensive product knowledge across the suite of ACL products, which included desktop applications, enterprise server applications, and cloud applications. Regarded as a subject matter expert for the installation and administration of ACL Analytics Exchange, the company's enterprise product.</li>
+            <li>Led the adoption of DITA as the documentation standard at ACL. Selected and implemented the single-sourcing tools used for all documentation authoring and production, which resulted in increased team productivity, significantly reduced localization costs, and faster release delivery timelines for documentation delivered in multiple formats in up to nine languages.</li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-2">
+            <h3 class="text-base font-semibold text-slate-900 dark:text-white">
+              Technical Writer
+            </h3>
+            <span class="text-sm text-slate-500 dark:text-slate-500 shrink-0">2003 – 2007</span>
+          </div>
+          <p class="text-sm font-medium text-slate-600 dark:text-slate-400 mb-2">FDM Software · Greater Vancouver Area</p>
+          <ul class="space-y-1 text-sm text-slate-600 dark:text-slate-400 list-disc list-inside">
+            <li>Wrote end-user, administrator, and implementation documentation for the FDM product suite, which included complex records management and computer-aided dispatch enterprise applications for public safety organizations (Fire and EMS).</li>
+            <li>Led the adoption of DocBook as the documentation standard at FDM to streamline production for print, HTML help, and web delivery. Selected and implemented the single-sourcing tools used for all documentation authoring and production, and converted existing content.</li>
+            <li>Developed the company website in ASP.NET, and implemented updates and changes.</li>
+          </ul>
+        </div>
+
+      </div>
     </section>
 
     <!-- Education -->
@@ -155,7 +182,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <style>
   @media print {
-    nav, footer { display: none; }
+    header, footer { display: none; }
     section { page-break-inside: avoid; }
   }
 </style>
