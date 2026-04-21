@@ -22,6 +22,7 @@ const items = (await getCollection('portfolio')).sort(
           tags={item.data.tags}
           date={item.data.date}
           id={item.id}
+          featured={item.data.featured}
         />
       ))}
     </div>
