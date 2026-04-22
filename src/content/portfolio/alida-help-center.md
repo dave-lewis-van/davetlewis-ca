@@ -5,8 +5,9 @@ tags: [Technical Writing, Documentation, DITA, Zendesk]
 date: 2023-10-01
 organization: Alida
 link: https://alidasupport.zendesk.com/hc/en-us
-featured: false
+featured: true
 position: 1
+thumbnail: /images/portfolio/alida_help_center.png
 ---
 
 ## Context

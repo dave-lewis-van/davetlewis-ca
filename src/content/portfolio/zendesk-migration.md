@@ -6,6 +6,7 @@ date: 2025-01-01
 organization: Alida
 featured: true
 position: 2
+thumbnail: images/portfolio/alida_zendesk_migration.png
 ---
 
 ## Context
