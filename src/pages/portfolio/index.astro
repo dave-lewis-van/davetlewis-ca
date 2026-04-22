@@ -10,11 +10,11 @@ const items = (await getCollection('portfolio')).sort(
 const allTags = ['All', ...Array.from(new Set(items.flatMap(i => i.data.tags))).sort()];
 ---
 
-<BaseLayout title="Portfolio" description="Selected technical writing work by Dave Lewis — API references, developer guides, and user documentation.">
+<BaseLayout title="Portfolio" description="Selected technical writing work by Dave Lewis.">
   <div class="max-w-5xl mx-auto px-6 py-24 sm:py-28">
     <h1 class="text-6xl sm:text-7xl font-serif font-normal tracking-[-0.025em] text-slate-900 dark:text-white">Portfolio</h1>
     <p class="mt-3 text-lg text-slate-600 dark:text-slate-400 max-w-2xl">
-      A decade of technical writing — API references, migrations, developer guides, and user manuals.
+      Selected technical writing work including end-user and administrator documentation and migrations.
       Filter by discipline or scan the full list.
     </p>
 

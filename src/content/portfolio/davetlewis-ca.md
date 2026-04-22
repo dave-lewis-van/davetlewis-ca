@@ -12,7 +12,7 @@ thumbnail: images/portfolio/davetlewis_ca.png
 
 ## Context
 
-A technical writer's portfolio site should demonstrate the same principles as good documentation: clear structure, purposeful content, and a maintainable authoring workflow. Building the site myself, rather than using a hosted portfolio tool, was also an opportunity to put docs-as-code practices to work. [View the repository on Github.](https://github.com/dave-lewis-van/davetlewis-ca)
+A technical writer's portfolio site should demonstrate the same principles as good documentation: clear structure, purposeful content, and a maintainable authoring workflow. Building the site myself, rather than using a hosted portfolio tool, was also an opportunity to put docs-as-code practices to work. <a href="https://github.com/dave-lewis-van/davetlewis-ca" target="_blank">View the repository on Github.</a>
 
 ## Approach
 
