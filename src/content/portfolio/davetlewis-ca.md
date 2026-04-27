@@ -7,7 +7,7 @@ organization: DTL Communications
 link: https://davetlewis.ca
 featured: true
 position: 3
-thumbnail: images/portfolio/davetlewis_ca.png
+thumbnail: /images/portfolio/davetlewis_ca.png
 ---
 
 ## Context
