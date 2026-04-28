@@ -15,7 +15,7 @@ Alida's documentation had grown into a collection of five standalone, product-sp
 
 ## Challenge
 
-The migration involved more than 1,500 DITA topics spread across product-specific user guides. These topics needed to be orgainzed as articles in categories and sections in Zendesk with each section mapping to a separate DITA map (.ditamap) file. This content planning exercise and reorganization required a significant investment of work upfront but resulted in a much cleaner organization of the articles in the knowledge base.
+The migration involved more than 1,500 DITA topics spread across product-specific user guides. These topics needed to be organized as articles in categories and sections in Zendesk with each section mapping to a separate DITA map (.ditamap) file. This content planning exercise and reorganization required a significant investment of work upfront but resulted in a much cleaner organization of the articles in the knowledge base.
 
 Beyond the sheer volume, the project required a simultaneous toolchain transition. We moved from XMetaL Author to Oxygen XML Author, which supported publishing DITA content directly to Zendesk. I established new workflows for validating DITA content before publication, posting review documentation to staging sites, and managing redirects for Zendesk articles.
 
@@ -29,7 +29,7 @@ Built a set of GitHub Actions–based workflows to support the new pipeline:
 
 - A **staging workflow** to publish documentation drafts outside of Zendesk for stakeholder review before going live.
 - An optional **validation workflow** that could be run as a step in the **staging workflow** using Schematron rules to catch structural and content errors in DITA source before publishing. This included simple rules, such as checking to ensure that a topic had a title or that elements weren't empty, and more complicated rules that verified that required NPS trademark information was included and applied correctly.
-- A **redirect workflow** to manage article URL changes in Zendesk, preventing broken links for existing users. This workflow was configured to run automatically changes to a CSV file storing the redirect entries was checked in to GitHub.
+- A **redirect workflow** to manage article URL changes in Zendesk, preventing broken links for existing users. This workflow ran automatically when changes to the redirect CSV were checked in to GitHub.
 
 ## Outcome
 
