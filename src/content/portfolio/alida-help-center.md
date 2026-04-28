@@ -20,7 +20,7 @@ The Alida platform was in active development, with features shipping in regular 
 
 ## Approach
 
-As a member of the documentation team, I partnered with Product Management, Engineering, QA, and UX to stay ahead of the release schedule. I built up familiarity with the platform features as a user before writing, then structured documentation around the workflows each audience actually performs.
+As a member of the documentation team, I partnered with Product Management, Engineering, QA, and UX to stay ahead of the release schedule. I built up familiarity with the platform features as a user before writing, then structured documentation around the workflows each audience performs.
 
 Throughout my time at Alida, I was focused on the reporting and analytics areas of the platform, and on Administrator features such as [Single Sign-on (SSO)](https://alidasupport.zendesk.com/hc/en-us/articles/45348005094676). More recently, I focused on documentation for the platform's first generative AI feature, the [AI assistant for reporting](https://alidasupport.zendesk.com/hc/en-us/articles/46395262958100). I also wrote documentation for complex analysis and reporting features including [weighting](https://alidasupport.zendesk.com/hc/en-us/articles/45343934676884), [significance testing](https://alidasupport.zendesk.com/hc/en-us/articles/45343868627220), and AI-powered [sentiment analysis](https://alidasupport.zendesk.com/hc/en-us/articles/45343794894228).
 

@@ -18,7 +18,7 @@ A technical writer's portfolio site should demonstrate the same principles as go
 
 Built with [Astro](https://astro.build), a static site generator well-suited to content-focused sites. Content is written in Markdown and managed as a content collection — the same pattern used in many modern documentation systems. The site is deployed to AWS S3 and served via CloudFront, with a CI/CD pipeline through GitHub Actions.
 
-The site is an experiment in AI-assisted development. Claude Code handled the majority of the initial front-end implementation (component structure, Tailwind CSS styling, and responsive layout) while I focused on content, architecture decisions, and design direction.
+The site is an experiment in AI-assisted development. Claude Code handled much of the initial front-end implementation (component structure, Tailwind CSS styling, and responsive layout) while I focused on content, architecture decisions, and design direction.
 
 ## Outcome
 
