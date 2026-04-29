@@ -7,9 +7,10 @@ interface Props {
   id: string;
   featured?: boolean;
   thumbnail?: string;
+  thumbnailFit?: 'cover' | 'contain';
 }
 
-const { title, summary, tags, date, id, featured = false, thumbnail } = Astro.props;
+const { title, summary, tags, date, id, featured = false, thumbnail, thumbnailFit = 'cover' } = Astro.props;
 const year = date.getFullYear();
 const tagsJson = JSON.stringify(tags.map(t => t.toLowerCase()));
 const visibleTags = tags.slice(0, featured ? 4 : 3);
@@ -32,7 +33,7 @@ const visibleTags = tags.slice(0, featured ? 4 : 3);
       <img
         src={thumbnail}
         alt={title}
-        class="w-full h-full object-cover"
+        class:list={["w-full h-full", thumbnailFit === 'contain' ? 'object-contain p-6' : 'object-cover']}
       />
     ) : (
       <div class="w-full h-full" style="background: repeating-linear-gradient(135deg, #f8fafc, #f8fafc 8px, #eef2f7 8px, #eef2f7 16px);" />

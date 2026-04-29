@@ -51,6 +51,7 @@ const allTags = ['All', ...Array.from(new Set(items.flatMap(i => i.data.tags))).
           id={item.id}
           featured={item.data.featured}
           thumbnail={item.data.thumbnail}
+          thumbnailFit={item.data.thumbnailFit}
         />
       ))}
     </div>

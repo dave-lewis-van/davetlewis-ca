@@ -13,6 +13,7 @@ const portfolio = defineCollection({
     featured: z.boolean().default(false),
     position: z.number().optional(),
     thumbnail: z.string().optional(),
+    thumbnailFit: z.enum(['cover', 'contain']).default('cover'),
   }),
 });
 
