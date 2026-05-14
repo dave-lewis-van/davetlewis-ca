@@ -6,7 +6,7 @@ date: 2026-04-17
 organization: DTL Communications
 link: https://davetlewis.ca
 featured: true
-position: 3
+position: 5
 thumbnail: /images/portfolio/davetlewis_ca.png
 ---
 
