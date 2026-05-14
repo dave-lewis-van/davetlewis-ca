@@ -5,7 +5,7 @@ tags: [Claude Code, Docs-as-code, Astro, AWS]
 date: 2026-04-17
 organization: DTL Communications
 link: https://davetlewis.ca
-featured: true
+featured: false
 position: 5
 thumbnail: /images/portfolio/davetlewis_ca.png
 ---
