@@ -1,7 +1,7 @@
 ---
 title: docs.activestate.com
 summary: Unified documentation for five open-source language bundles, the ActiveState Platform, and Komodo IDE under a single Markdown and Hugo docs-as-code pipeline.
-tags: [Technical Writing, Documentation, Markdown, Docs-as-code]
+tags: [Technical Writing, Markdown, Docs-as-code]
 date: 2020-10-31
 organization: ActiveState
 featured: false
