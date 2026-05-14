@@ -1,11 +1,11 @@
 ---
-title: tech-terms
+title: tech-terms API
 summary: A public REST API for technical writing terminology, built with FastAPI and backed by a docs-as-code CI/CD pipeline.
 tags: [Technical Writing, API, Python, Docs-as-code, ReadMe]
 date: 2026-05-13
 organization: Personal
-featured: false
-position: 3
+featured: true
+position: 1
 thumbnail: /images/portfolio/read_me.png
 thumbnailFit: contain
 link: https://tech-terms.readme.io/docs/getting-started

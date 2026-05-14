@@ -6,7 +6,7 @@ date: 2023-10-01
 organization: Alida
 link: https://alidasupport.zendesk.com/hc/en-us
 featured: true
-position: 1
+position: 2
 thumbnail: /images/portfolio/alida_help_center.png
 ---
 

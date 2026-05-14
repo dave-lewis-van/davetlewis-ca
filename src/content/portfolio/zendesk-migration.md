@@ -5,7 +5,7 @@ tags: [DITA, Content strategy, Zendesk]
 date: 2025-01-01
 organization: Alida
 featured: true
-position: 2
+position: 3
 thumbnail: /images/portfolio/alida_zendesk_migration.png
 ---
 
