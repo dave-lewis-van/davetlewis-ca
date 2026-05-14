@@ -8,6 +8,7 @@ link: https://davetlewis.ca
 featured: false
 position: 5
 thumbnail: /images/portfolio/davetlewis_ca.png
+thumbnailFit: contain
 ---
 
 ## Context
